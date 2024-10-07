@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width initial-scale=1">
+<meta name="description" content="Bamse's News page">
+
+<head>
+    <link rel="stylesheet" href="Bamse.css" />
+    <title> Bamse News </title>
+    <script src="https://kit.fontawesome.com/2d208c5fe1.js" crossorigin="anonymous"></script>
+    <style>
+        /* Nav active starts */
+        .active {
+            background-color: rgb(199, 194, 194);
+            border-right: 2px solid #073264;
+            border-left: 2px solid #073264;
+        }
+
+        .activemobile {
+            background-color: rgb(199, 194, 194);
+            border-top: 2px solid #073264;
+            border-bottom: 2px solid #073264;
+        }
+
+        /* Nav active ends */
+
+        .content {
+            background-color: #f1f1f1;
+            border-radius: 20px;
+            border: 2px solid #073264;
+            float: left;
+            width: 90%;
+            padding-left: 80px;
+            padding-right: 80px;
+            padding-bottom: 80px;
+        }
+
+        .resizedArticle {
+            display: none;
+        }
+
+        @media screen and (max-width: 1305px) {
+            .logo {
+                width: 180px;
+            }
+
+            .mainNavigation {
+                display: none;
+            }
+
+            .openbtn {
+                display: block;
+            }
+
+            .video {
+                height: 500px;
+            }
+
+            .resizedArticle {
+                display: block;
+            }
+
+            .fullArticle {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 900px) {
+            .video {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="containerMedia">
+        <div class="Button-1">
+            <button aria-label="Facebook button" style="background-color:#8ED0F0; border:0px;">
+                <a class="mediaButtonL" target="_blank" href="https://www.facebook.com/BamseCameToo"> <i
+                        class="fa-brands fa-facebook-square fa-4x">
+                    </i></a></button>
+        </div>
+        <div class="Button-2">
+            <button aria-label="Twitter button" style="background-color:#8ED0F0; border:0px;">
+                <a class="mediaButtonL" target="_blank" href="https://twitter.com/seascampbamse"><i
+                        class="fa-brands fa-twitter-square fa-4x"></i></a></button>
+        </div>
+    </div>
+
+    <div id="mySidepanel" class="sidepanel">
+        <a href="index.html"><b>The Book</b></a>
+        <a href="BamseStory.html"><b>Bamse's Story</b></a>
+        <a href="BamseWood.html"><b>Bamse's Wood</b></a>
+        <a href="BamseReviews.html"><b>Reviews</b></a>
+        <a href="BamseActivities.html"><b>Activities</b></a>
+        <a class="activemobile" href="BamseNews.html"><b>News</b></a>
+        <a href="BamseContact.html"><b>Contact</b></a>
+    </div>
+
+
+    <button aria-label="Menu toggle button" class="openbtn" onclick="toggleText()"><b>☰</b></button>
+
+
+    <script>
+        function toggleText() {
+            var x = document.getElementById("mySidepanel");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+
+    <div class="mainNavigation">
+        <ul>
+            <li><a href="index.html"><b>The Book</b></a></li>
+            <li><a href="BamseStory.html"><b>Bamse's Story</b></a></li>
+            <li><a href="BamseWood.html"><b>Bamse's Wood</b></a></li>
+            <li><a href="BamseReviews.html"><b>Reviews</b></a></li>
+            <li><a href="BamseActivities.html"><b>Activities</b></a></li>
+            <li><a class="active" href="BamseNews.html"><b>News</b></a></li>
+            <li><a href="BamseContact.html"><b>Contact</b></a></li>
+        </ul>
+    </div>
+
+    <img src="LogoResized.png" alt="Bamse logo" width="200px" class="logo">
+
+    <div class="header">
+        <img src="RealCloud1.png" width="10%" class="clouds" alt="Cloud picture" style="top: 10%; right: 65%">
+        <img src="RealCloud2.png" width="20%" class="clouds" alt="Cloud picture" style="top: 35%; left: 75%">
+        <img src="RealCloud3.png" width="12%" class="clouds" alt="Cloud picture" style="top: 15%; left: 60%">
+        <img src="RealCloud4.png" width="25%" class="clouds" alt="Cloud picture" style="top: 35%; left: 5%">
+        <h1 id="bamse-text" style="text-align:center; margin-top:325px;"><b>Bamse</b></h1>
+
+    </div>
+
+    </div>
+
+    <div class="columnCloud">
+        &nbsp;
+    </div>
+
+    <div class="row">
+        <div class="content">
+            <h2 id="bamse-text">Bamse Documentary </h2>
+            <p>This documentary gives an overview of Bamse’s story and how he sails on the KNM Thorodd from Norway to
+                Montrose with Captain Hafto,
+                to escort King Haakon to Great Britain and his continued adventures when he arrives.</p>
+            <div style="text-align:center;">
+                <iframe class="video" width="80%" height="750px"
+                    src="https://www.youtube.com/embed/cZ8ohSE1OnA"></iframe>
+            </div>
+            <h2 id="bamse-text">BBC video about Bamse from 'On The Road'</h2>
+            <p>Bamse is celebrated for saving the lives of two Norwegian sailors, stationed in Montrose and Dundee
+                during World War Two. These acts of bravery earned him a PDSA gold medal, the animal equivalent of the
+                George Cross. On his visit to Montrose, Fred discovers more about Bamse from St Bernard lovers, meets a
+                woman who remembers him fondly from her childhood, and spends some quality time with the dogs
+                themselves.
+                </br></br>
+                This year marks the 70th anniversary of Bamse’s death and the town of Montrose is preparing to pay their
+                respects and celebrate his achievements. The Norwegian Navy will dock in Montrose for the final time on
+                21 July to join the town in their celebrations, with a parade of sea cadets, bagpipers and St Bernards.
+                </br></br>
+                Watch the BBC video <a target="_blank" class="review" href="https://www.bbc.co.uk/programmes/p022g1yj">here.</a></p>
+            <h2 id="bamse-text">Norwegian navy vessel visits Scotland to honour heroic sea dog.</h2>
+            <p>Here is an article about Bamse and his adventures featuring a visit to Scotland by a vessel from the
+                Nowegian Navy.
+                </br></br>
+                In 2014, the Norwegian navy visited Scotland to mark the 70th anniversary of the death of heroic Second
+                World War sea dog Bamse. The St Bernard was bought in Oslo in 1937 by Captain Erling Hafto and was taken
+                to sea aboard the whale catcher Thorodd. When the Second World War broke out, the vessel was drafted
+                into the Royal Norwegian Navy and Bamse became an official member of the crew.
+                </br></br>
+                Read it <a target="_blank" class="review" href="https://www.bbc.co.uk/news/uk-scotland-tayside-central-27662650">here.</a></p>
+            <h2 id="bamse-text">An interesting article about Bamse</h2>
+            <div class="fullArticle" style="text-align:center; border: 2px solid #073264; background-color:#FBFBFB;">
+                <img src="Article1Resized.png" width="100%" alt="Picture of article"
+                    style="border-bottom:2px solid #073264 ">
+                <img src="Article-2.PNG" alt="Picture of article" width="62%">
+            </div>
+            <div class="resizedArticle">
+                <h2 style="font-size:30px">Bamse brought to life for new generation by author</h2>
+                <p><b>The Courier & Advertiser (Fife Edition) 31 Dec 2014 By Richard Watt riwatt@thecourier.co.uk</b>
+                </p>
+                <div style="text-align:center;">
+                    <img src="writerPic.webp" alt="Picture of Anna" style="border:1px solid #073264">
+                    <p><b>Anna Mandell was inspired to write a children’s book about Bamse after a visit to
+                            Montrose.</b></p>
+                </div>
+                <p>
+                    A CHILDREN’S book celebrating the life of SecondWorldWar sea dog Bamse has set sail for the
+                    bookshelves
+                    this week.</br></br>
+
+                    Bamse became famous more than 70 years ago as a crew member of the Norwegian Navy who would
+                    regularly
+                    take part in football matches, round up sailors from local pubs at the end of the day and is even
+                    credited with stopping bar fights and a knife attack at Dundee docks.</br></br>
+
+                    On a visit to Montrose two years ago, hosted by author and historianAndrew Orr, Anna Mandell was so
+                    struck by the brave St Bernard’s story that she decided to write a book about him.</br></br>
+
+                    She said: “What enchanted me was when the sailors went to the pub, Bamse would know when they should
+                    be
+                    back on board.</br></br>
+
+                    “He would get on the bus and go and get them out of the pub and take them back to ship. In the end,
+                    because he made a nuisance of himself on these buses, he got his own bus pass.</br></br>
+
+                    “The idea was he was more of a comfort but he saved a sailor from the water and another from being
+                    attacked so he was very brave.</br></br>
+
+                    “When he died at Montrose the feeling for him was so great he got his own grave.”</br></br>
+
+                    She added: “I have ideas for the second book already.”</br></br>
+
+                    Husband Peter commissioned artist Richard Maby to do a cartoon for her after their visit and they
+                    decided to turn the idea into a full-size children’s picture book.</br></br>
+
+                    Peter said: “The art style is very reminiscent of period classics like the Adventures of Tintin, or
+                    some
+                    of DC Thomson’s comics.”</br></br>
+
+                    Anna invented some new adventures for Bamse for her book and Richard came up with the detailed
+                    pictures.</br></br>
+
+                    Every image shows Bamse wearing a hat as he had a particular love of headwear.</br></br>
+
+                    Anna, who spent years designing and making fancy dress outfits in her home village of Moulton Chapel
+                    in
+                    Lincolnshire, even planted the 17-acre Bamse’s Wood in the Lake District to offset the ecological
+                    impact
+                    of printing her book.</br></br>
+
+                    The first orders are now with Amazon’s Fife distribution centre and copies are also available
+                    throughWaterstone’s and all good bookshops. Bamse was born in 1937 and lived with the Hafto family
+                    in
+                    Honningsvag, Norway.</br></br>
+
+                    In 1940, during the Nazi invasion of Norway, he became a crew member of the KNM Thorodd, a ship that
+                    was
+                    part of the flotilla alongside HMS Devonshire, which carried King Haakon to Britain.</br></br>
+
+                    Bamse and his fellow crew members initially arrived in Lerwick but were then transferred to Port
+                    Edgar
+                    in the Firth of Forth, where the KNM Thorodd was converted for minesweeping duties.</br></br>
+
+                    With the conversion complete, the KNM Thorodd regularly put out to sea to carry out its dangerous
+                    tasks.</br></br>
+
+                    Dundee and Montrose became the regular home ports of the ship and its crew.</br></br>
+
+                    In both places Bamse became known for his brave deeds and brought companionship to all he came into
+                    contact with.</br></br>
+
+                    Ultimately Bamse was adopted as the mascot for all of the Norwegian forces.</br></br>
+
+                    A statue of the dog was unveiled in Montrose by Prince Andrew in 2006.</br></br>
+
+                    Some 70 years on, the Norwegian Navy still sends dignitaries to the beloved dog’s grave on the
+                    anniversary of his death.</br></br>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="columnCloud">
+        &nbsp;
+    </div>
+
+    <footer>
+        <img src="SavesTheDay.png" alt="Bamse banner" width="100%">
+    </footer>
+    <p
+        style="font-size:18px; background-color: #f1f1f1; margin-top:-4px; margin-bottom:0px; border-top:2px solid #073264; padding-left:10px;">
+        <b>
+            © Anna Mandell & Bamse Features Ltd 2014 |
+            <a class="terms" href="BamseTerms.html"> Terms of Use </a></b>
+    </p>
+</body>
+
+</html>

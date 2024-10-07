@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width initial-scale=1">
+<meta name="description" content="Bamse's book page">
+
+<head> </head>
+<link rel="stylesheet" href="Bamse.css" />
+<title> Bamse Came Too </title>
+<script src="https://kit.fontawesome.com/2d208c5fe1.js" crossorigin="anonymous"></script>
+<style>
+    .content {
+        background-color: #f1f1f1;
+        border-radius: 20px;
+        border: 2px solid #073264;
+        float: left;
+        width: 90%;
+        padding-left: 80px;
+        padding-right: 80px;
+        padding-bottom: 80px;
+        padding-top: 80px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 0.5fr 1.5fr;
+        grid-template-rows: 1fr;
+        gap: 0px 40px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "Picture Text";
+    }
+
+    .Picture {
+        grid-area: Picture;
+    }
+
+    .Text {
+        grid-area: Text;
+    }
+
+      /* Active bar styling start */
+      .active {
+            background-color: rgb(199, 194, 194);
+            border-right: 2px solid #073264;
+        }
+
+        .activemobile {
+            background-color: rgb(199, 194, 194);
+            border-top: 2px solid #073264;
+            border-bottom: 2px solid #073264;
+        }
+
+        /* Active bar styling end */
+
+    @media screen and (max-width: 1305px) {
+        .logo {
+            width: 180px;
+        }
+
+        .mainNavigation {
+            display: none;
+        }
+
+        .openbtn {
+            display: block;
+        }
+    }
+
+    @media screen and (max-width: 1500px) {
+        .container {
+            display: block;
+        }
+
+        .Picture {
+            width: 100%;
+            text-align: center;
+        }
+
+        .bookCover {
+            width: 400px;
+        }
+    }
+</style>
+</head>
+
+<body>
+    <div class="containerMedia">
+        <div class="Button-1"><button aria-label="Facebook button" style="background-color:#8ED0F0; border:0px;"><a
+                    class="mediaButtonL" target="_blank" href="https://www.facebook.com/BamseCameToo"><i
+                        class="fa-brands fa-facebook-square fa-4x"></i></a></button></div>
+        <div class="Button-2"><button aria-label="Twitter button" style="background-color:#8ED0F0; border:0px;"><a
+                    class="mediaButtonL" target="_blank" href="https://twitter.com/seascampbamse"><i
+                        class="fa-brands fa-twitter-square fa-4x"></i></a></button></div>
+    </div>
+    <div id="mySidepanel" class="sidepanel">
+        <a class="activemobile" href="index.html"><b>The Book</b></a>
+        <a href="BamseStory.html"><b>Bamse's Story</b></a>
+        <a href="BamseWood.html"><b>Bamse's Wood</b></a>
+        <a href="BamseReviews.html"><b>Reviews</b></a><a href="BamseActivities.html"><b>Activities</b></a><a
+            href="BamseNews.html"><b>News</b></a><a href="BamseContact.html"><b>Contact</b></a>
+    </div><button aria-label="Menu toggle button" class="openbtn" onclick="toggleText()"><b>☰</b></button>
+    <script>function toggleText() {
+            var x = document.getElementById("mySidepanel");
+
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            }
+
+            else {
+                x.style.display = "block";
+            }
+        }
+
+    </script>
+    <div class="mainNavigation">
+        <ul>
+            <li><a class="active" href="index.html"><b>The Book</b></a></li>
+            <li><a href="BamseStory.html"><b>Bamse's Story</b></a></li>
+            <li><a href="BamseWood.html"><b>Bamse's Wood</b></a></li>
+            <li><a href="BamseReviews.html"><b>Reviews</b></a></li>
+            <li><a href="BamseActivities.html"><b>Activities</b></a></li>
+            <li><a href="BamseNews.html"><b>News</b></a></li>
+            <li><a href="BamseContact.html"><b>Contact</b></a></li>
+        </ul>
+    </div><img src="LogoResized.png" alt="Bamse logo" width="200px" class="logo">
+    <div class="header"><img src="RealCloud1.png" width="10%" class="clouds" alt="Cloud picture"
+            style="top: 10%; right: 65%"><img src="RealCloud2.png" width="20%" class="clouds" alt="Cloud picture"
+            style="top: 35%; left: 75%"><img src="RealCloud3.png" width="12%" class="clouds" alt="Cloud picture"
+            style="top: 15%; left: 60%"><img src="RealCloud4.png" width="25%" class="clouds" alt="Cloud picture"
+            style="top: 35%; left: 5%">
+        <h1 id="bamse-text" style="text-align:center; margin-top:325px;"><b>Bamse</b></h1>
+    </div>
+    <div class="columnCloud">&nbsp;
+    </div>
+    <div class="row">
+        <div class="content">
+            <div class="container">
+                <div class="Picture"><img class="bookCover" src="BookCoverFixed.jpg" width="500px"
+                        style="border:2px solid #073264;"></div>
+                <div class="Text">
+                    <h2 id="bamse-text">Bamse Came Too</h2>
+                    <p>Bamse Came Too is a picture book of adventures of the brave St. Bernard dog, Bamse, during his
+                        journey
+                        from Norway to Scotland at the beginning of World War II. He becomes a member of the Norwegian
+                        Free Navy
+                        and journeys aboard the KNM Thorodd on an exciting adventure with a very happy outcome.
+                        </br></br>
+                        Bamse Came Too is available on <a target="_blank" class="review"
+                        href="https://www.amazon.co.uk/Bamse-Came-Too-Anna-Mandell/dp/0993078303/"><b>Amazon</b></a>,<a target="_blank" class="review"
+                        href="https://www.waterstones.com/book/bamse-came-too/anna-mandell/9780993078309"><b>Waterstones</b></a> and through most good bookshops.
+                        </br></br>
+                        Anna Mandell first learned of Bamse on a visit to Scotland in 2012. His story was an amazing one
+                        and totally captured her imagination.
+                        </br></br>
+                        Bamse was born in 1937 and lived with the Hafto family in Honningsvåg, Norway. In 1940, during
+                        the invasion of his country, he became a crew member of the KNM Thorodd, a ship that formed part
+                        of the flotilla that set off alongside the HMS Devonshire carrying King Haakon to Great Britain.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="columnCloud">&nbsp;
+    </div>
+    <footer><img src="SavesTheDay.png" alt="Bamse banner" width="100%"></footer>
+    <p
+        style="font-size:18px; background-color: #f1f1f1; margin-top:-4px; margin-bottom:0px; border-top:2px solid #073264; padding-left:10px;">
+        <b>© Anna Mandell & Bamse Features Ltd 2014 | <a class="terms" href="BamseTerms.html">Terms of Use </a></b>
+    </p>
+</body>
+
+</html>

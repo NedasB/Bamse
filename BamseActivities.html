@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width initial-scale=1">
+<meta name="description" content="Bamse's contact page">
+
+<head>
+    <link rel="stylesheet" href="Bamse.css" />
+    <title> Bamse Activities </title>
+    <script src="https://kit.fontawesome.com/2d208c5fe1.js" crossorigin="anonymous"></script>
+    <style>
+        /* Nav active starts */
+        .active {
+            background-color: rgb(199, 194, 194);
+            border-right: 2px solid #073264;
+            border-left: 2px solid #073264;
+        }
+
+        .activemobile {
+            background-color: rgb(199, 194, 194);
+            border-top: 2px solid #073264;
+            border-bottom: 2px solid #073264;
+        }
+
+        /* Nav active ends */
+
+        .content {
+            background-color: #f1f1f1;
+            border-radius: 20px;
+            border: 2px solid #073264;
+            float: left;
+            width: 90%;
+            padding-left: 80px;
+            padding-right: 80px;
+            padding-bottom: 40px;
+        }
+
+        /* Container starts */
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "picture1 picture2";
+        }
+
+        .picture1 {
+            grid-area: picture1;
+        }
+
+        .picture2 {
+            grid-area: picture2;
+        }
+
+        /* Container ends */
+
+        /* Container 1 starts */
+        .container1 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "Picture3 Picture4";
+        }
+
+        .Picture3 {
+            grid-area: Picture3;
+        }
+
+        .Picture4 {
+            grid-area: Picture4;
+        }
+
+        /* Container 1 ends */
+
+        .container1 {
+            text-align: center;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+
+        @media screen and (max-width: 1305px) {
+            .container {
+
+                display: block;
+            }
+
+            .logo {
+                width: 180px;
+            }
+
+            .mainNavigation {
+                display: none;
+            }
+
+            .openbtn {
+                display: block;
+            }
+
+            .sailorPic {
+                width: 75%;
+                height: 75%;
+            }
+
+            .logoPic {
+                width: 75%;
+                height: 75%;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="containerMedia">
+        <div class="Button-1">
+            <button aria-label="Facebook button" style="background-color:#8ED0F0; border:0px;">
+                <a class="mediaButtonL" target="_blank" href="https://www.facebook.com/BamseCameToo"> <i
+                        class="fa-brands fa-facebook-square fa-4x">
+                    </i></a></button>
+        </div>
+        <div class="Button-2">
+            <button aria-label="Twitter button" style="background-color:#8ED0F0; border:0px;">
+                <a class="mediaButtonL" target="_blank" href="https://twitter.com/seascampbamse"><i
+                        class="fa-brands fa-twitter-square fa-4x"></i></a></button>
+        </div>
+    </div>
+
+    <div id="mySidepanel" class="sidepanel">
+        <a href="BamseBook.html"><b>The Book</b></a>
+        <a href="BamseStory.html"><b>Bamse's Story</b></a>
+        <a href="BamseWood.html"><b>Bamse's Wood</b></a>
+        <a href="BamseReviews.html"><b>Reviews</b></a>
+        <a class="activemobile" href="BamseActivities.html"><b>Activities</b></a>
+        <a href="BamseNews.html"><b>News</b></a>
+        <a href="BamseContact.html"><b>Contact</b></a>
+    </div>
+
+
+    <button aria-label="Menu toggle button" class="openbtn" onclick="toggleText()"><b>☰</b></button>
+
+
+    <script>
+        function toggleText() {
+            var x = document.getElementById("mySidepanel");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+
+    <div class="mainNavigation">
+        <ul>
+            <li><a href="BamseBook.html"><b>The Book</b></a></li>
+            <li><a href="BamseStory.html"><b>Bamse's Story</b></a></li>
+            <li><a href="BamseWood.html"><b>Bamse's Wood</b></a></li>
+            <li><a href="BamseReviews.html"><b>Reviews</b></a></li>
+            <li><a class="active" href="BamseActivities.html"><b>Activities</b></a></li>
+            <li><a href="BamseNews.html"><b>News</b></a></li>
+            <li><a href="BamseContact.html"><b>Contact</b></a></li>
+        </ul>
+    </div>
+
+    <img src="LogoResized.png" alt="Bamse logo" width="200px" class="logo">
+
+    <div class="header">
+        <img src="RealCloud1.png" width="10%" class="clouds" alt="Cloud picture" style="top: 10%; right: 65%">
+        <img src="RealCloud2.png" width="20%" class="clouds" alt="Cloud picture" style="top: 35%; left: 75%">
+        <img src="RealCloud3.png" width="12%" class="clouds" alt="Cloud picture" style="top: 15%; left: 60%">
+        <img src="RealCloud4.png" width="25%" class="clouds" alt="Cloud picture" style="top: 35%; left: 5%">
+        <h1 id="bamse-text" style="text-align:center; margin-top:325px;"><b>Bamse</b></h1>
+    </div>
+
+    </div>
+
+    <div class="columnCloud">
+        &nbsp;
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <div class="content">
+                <h2 id="bamse-text">Colouring sheets</h2>
+                <p>Below you will find a collection of pictures that you can download and print at home to colour in!
+                    You could use the full-colour pictures in Bamse Came Too for inspiration, or let your imagination
+                    run wild!
+                    We'd love to see what you come up with! Share your work with us on Twitter, Facebook or Instagram
+                    with the hashtag #seascampbamse </p>
+                </br>
+                <div class="container">
+                    <div class="picture1">
+                        <img class="sailorPic" src="ColouringSailorsResized.png" alt="Colouring of sailors" height="500px"
+                            style="border: 2px solid #073264">
+                        </br>
+                        <a target="_blank" class="review"
+                            href="http://www.bamse.co.uk/activities/colouring/Bamse%20and%20Sailors.pdf">
+                            <b>Download and Print: Bamse and Sailors.pdf</b></a>
+                        </br>
+                    </div>
+                    <div class="picture2">
+                        <img class="logoPic" src="ColouringLogoResized.png" alt="Colouring for logo" height="500px" style="border: 2px solid #073264">
+                        </br>
+                        <a target="_blank" class="review"
+                            href="http://www.bamse.co.uk/activities/colouring/Bamse%20Logo.pdf">
+                            <b>Download and Print: Bamse Logo.pdf</b></a>
+                        </br>
+                    </div>
+                </div>
+                </br>
+                </br>
+                <div class="container1" style="display:block;">
+                    <div class="Picture3">
+                        <img src="ColouringThoroddResized.png" alt="Colouring of Thorodd" width="80%" style="border: 2px solid #073264">
+                        </br>
+                        <a target="_blank" class="review"
+                            href="http://www.bamse.co.uk/activities/colouring/Thorodd.pdf">
+                            <b>Download and Print: Thorodd.pdf</b></a>
+                    </div>
+                    </br>
+                    <div class="Picture4">
+                        <img src="ColouringAtSeaResized.png" alt="Colouring for at sea" width="80%" style="border: 2px solid #073264">
+                        </br>
+                        <a target="_blank" class="review"
+                            href="http://www.bamse.co.uk/activities/colouring/Bamse%20at%20Sea.pdf">
+                            <b>Download and Print: Bamse at Sea.pdf
+                            </b></a>
+                    </div>
+                    </br>
+                </div>
+                <h2 id="bamse-text">Spot the difference</h2>
+                <div style="text-align:center;">
+                    <img src="spot-the-difference.jpg" alt="Spot the difference" width="80%" style="border: 2px solid #073264">
+                    </br>
+                    <a target="_blank" class="review"
+                        href="http://www.bamse.co.uk/activities/colouring/Spot%20the%20Difference.pdf">
+                        <b>Download and Print: Spot the Difference.pdf
+
+                        </b></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="columnCloud">
+            &nbsp;
+        </div>
+
+        <footer>
+            <img src="SavesTheDay.png" alt="Bamse banner" width="100%">
+        </footer>
+        <p
+            style="font-size:18px; background-color: #f1f1f1; margin-top:-4px; margin-bottom:0px; border-top:2px solid #073264; padding-left:10px;">
+            <b>
+                © Anna Mandell & Bamse Features Ltd 2014 |
+                <a class="terms" href="BamseTerms.html"> Terms of Use </a></b>
+        </p>
+</body>
+
+</html>

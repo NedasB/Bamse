@@ -1,0 +1,68 @@
+.container {  display: grid;
+   grid-template-columns: 0.8fr 1.2fr 1fr 1fr 1.2fr 0.8fr;
+   grid-template-rows: 0.8fr 0.8fr 1.4fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+          grid-auto-flow: row;
+       grid-template-areas:
+            "Navigation Navigation Navigation Navigation Navigation Navigation"
+        "Side-1 Main-title- Main-title- Main-title- Main-title- Side-2"
+     "Side-1 Main-content Main-content Main-content Main-content Side-2"
+           "Side-1 Main-content Main-content Main-content Main-content Side-2"
+            "Side-1 Main-content Main-content Main-content Main-content Side-2"
+           "Footer Footer Footer Footer Footer Footer";
+                      }
+                      
+             .Footer { grid-area: Footer; }                               style="position: absolute; top: 20%; right: 15%"
+      
+                      .Navigation { grid-area: Navigation; }        <img src="Cloud 2.png" width="350px" class="clouds" style="top: 45%; left: 15%">
+             
+                      .Main-title- { grid-area: Main-title-; }
+              
+                      .Main-content {  display: grid;
+                        grid-template-columns: 0.7fr 1.3fr;
+                        grid-template-rows: 0.3fr 2.5fr;
+                        gap: 0px 0px;
+              grid-auto-flow: row;
+                        grid-template-areas:
+                    "Picture Text-area";
+                        grid-area: Main-content;
+                        border: 2px solid #073264;
+      border-radius: 20px;
+      background-color: #F2F2F2;
+                      }
+                      
+                      .Picture {  display: grid;
+              grid-template-columns: 1.4fr 1.3fr 0.4fr;
+                        grid-template-rows: 0.1fr 2.8fr 0.1fr;
+                        gap: 0px 0px;
+         grid-auto-flow: row;
+                        grid-template-areas:
+                          ". . ."
+                          ". Picture-Here ."
+                          ". . .";
+             grid-area: Picture;
+                      }
+                      
+                      .Picture-Here { grid-area: Picture-Here; }
+                      
+                      .Text-area {  display: grid;
+                        grid-template-columns: 0.1fr 4.1fr 0.1fr;
+          grid-template-rows: 0.2fr 2.6fr 0.2fr;
+                        gap: 0px 0px;
+                        grid-auto-flow: row;
+                        grid-template-areas:
+                          ". . ."
+                          ". Text-Here ."
+                          ". . .";
+                        grid-area: Text-area;
+                      }
+                      
+             .Text-Here { grid-area: Text-Here; }
+                      
+                      .Sub-title { grid-area: Sub-title; }
+                      
+                      .Side-1 { grid-area: Side-1;
+                        background-color: #8ED0F0; }
+          
+                      .Side-2 { grid-area: Side-2; 
+                        background-color: #8ED0F0;}

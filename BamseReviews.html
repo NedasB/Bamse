@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width initial-scale=1">
+<meta name="description" content="Bamse's reviews page">
+
+<head>
+    <link rel="stylesheet" href="Bamse.css" />
+    <title> Bamse Reviews </title>
+    <script src="https://kit.fontawesome.com/2d208c5fe1.js" crossorigin="anonymous"></script>
+    <style>
+        /* Nav active starts */
+        .active {
+            background-color: rgb(199, 194, 194);
+            border-right: 2px solid #073264;
+            border-left: 2px solid #073264;
+        }
+
+        .activemobile {
+            background-color: rgb(199, 194, 194);
+            border-top: 2px solid #073264;
+            border-bottom: 2px solid #073264;
+        }
+
+        /* Nav active end */
+
+        .content {
+            background-color: #f1f1f1;
+            border-radius: 20px;
+            border: 2px solid #073264;
+            float: left;
+            width: 90%;
+            padding-left: 80px;
+            padding-right: 80px;
+            padding-bottom: 80px;
+        }
+
+        /* Container 1 starts */
+
+        .container {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            grid-template-rows: 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "right-side left-side";
+        }
+
+        .left-side {
+            grid-area: left-side;
+        }
+
+        .right-side {
+            grid-area: right-side;
+        }
+
+        /* Container 1 ends */
+
+        @media screen and (max-width: 1305px) {
+            .container {
+                width: 90%;
+                display: block;
+            }
+
+            .logo {
+                width: 180px;
+            }
+
+            .mainNavigation {
+                display: none;
+            }
+
+            .openbtn {
+                display: block;
+            }
+
+            .castoffpic {
+                margin-left: 8%;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="containerMedia">
+        <div class="Button-1">
+            <button aria-label="Facebook button" style="background-color:#8ED0F0; border:0px;">
+                <a class="mediaButtonL" target="_blank" href="https://www.facebook.com/BamseCameToo"> <i
+                        class="fa-brands fa-facebook-square fa-4x">
+                    </i></a></button>
+        </div>
+        <div class="Button-2">
+            <button aria-label="Twitter button" style="background-color:#8ED0F0; border:0px;">
+                <a class="mediaButtonL" target="_blank" href="https://twitter.com/seascampbamse"><i
+                        class="fa-brands fa-twitter-square fa-4x"></i></a></button>
+        </div>
+    </div>
+
+    <div id="mySidepanel" class="sidepanel">
+        <a href="index.html"><b>The Book</b></a>
+        <a href="BamseStory.html"><b>Bamse's Story</b></a>
+        <a href="BamseWood.html"><b>Bamse's Wood</b></a>
+        <a class="activemobile" href="BamseReviews.html"><b>Reviews</b></a>
+        <a href="BamseActivities.html"><b>Activities</b></a>
+        <a href="BamseNews.html"><b>News</b></a>
+        <a href="BamseContact.html"><b>Contact</b></a>
+    </div>
+
+
+    <button aria-label="Menu toggle button" class="openbtn" onclick="toggleText()"><b>☰</b></button>
+
+
+    <script>
+        function toggleText() {
+            var x = document.getElementById("mySidepanel");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+
+    <div class="mainNavigation">
+        <ul>
+            <li><a href="index.html"><b>The Book</b></a></li>
+            <li><a href="BamseStory.html"><b>Bamse's Story</b></a></li>
+            <li><a href="BamseWood.html"><b>Bamse's Wood</b></a></li>
+            <li><a class="active" href="BamseReviews.html"><b>Reviews</b></a></li>
+            <li><a href="BamseActivities.html"><b>Activities</b></a></li>
+            <li><a href="BamseNews.html"><b>News</b></a></li>
+            <li><a href="BamseContact.html"><b>Contact</b></a></li>
+        </ul>
+    </div>
+
+    <img src="LogoResized.png" alt="Bamse logo" width="200px" class="logo">
+
+    <div class="header">
+        <img src="RealCloud1.png" width="10%" class="clouds" alt="Cloud picture" style="top: 10%; right: 65%">
+        <img src="RealCloud2.png" width="20%" class="clouds" alt="Cloud picture" style="top: 35%; left: 75%">
+        <img src="RealCloud3.png" width="12%" class="clouds" alt="Cloud picture" style="top: 15%; left: 60%">
+        <img src="RealCloud4.png" width="25%" class="clouds" alt="Cloud picture" style="top: 35%; left: 5%">
+        <h1 id="bamse-text" style="text-align:center; margin-top:325px;"><b>Bamse</b></h1>
+
+    </div>
+
+    </div>
+
+    <div class="columnCloud">
+        &nbsp;
+    </div>
+
+    <div class="row">
+
+        <div class="column">
+            <div class="content">
+                <h2 id="bamse-text">Reviews</h2>
+                <a target="_blank" class="review"
+                    href="https://www.amazon.co.uk/gp/customer-reviews/R140H3AEPJ3U6Z/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=0993078303"><b>5.0
+                        out of 5 stars, Ideal present for my nephew!</b></a>
+
+                <p>
+                    I bought 'Bamse' for my young nephew who was captivated by the story and the wonderful illustrations
+                    that really bring Bamse and his adventures to life. The whole book just oozes quality because the
+                    pages are printed on thick, glossy paper, and I love that the kids can open the book up flat without
+                    it coming apart at the spine, something that has been a real problem with other books I’ve bought in
+                    the past. It means my nephew can read it along with his cousins and friends, and they have all been
+                    able to get really involved with the story.
+                    </br></br>
+
+                    He's doing World War 2 at school, which can be a difficult topic to discuss with youngsters, but
+                    this is a really nice warm story with a happy ending set against the terrible backdrop of war. It's
+                    made a real impression on him as he now wants a St. Bernard of his own – over to my sister to handle
+                    that one!
+                    </br></br>
+
+                    <b>- Miss Laura Patricia Bradder</b>
+                </p>
+                </br></br></br></br>
+
+                <a target="_blank" class="review"
+                    href="https://www.amazon.co.uk/gp/customer-reviews/RR91C5YDLA8VY/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=0993078303"><b>
+                        5.0 out of 5 stars,
+                        Good story based in reality, told through word and illustration.</b></a>
+
+                <p>
+                    I read this book with delight. It was like returning to the books of my childhood, engaging, easy to
+                    read, and the illustrations are delightful.
+                    </br>
+                    As a child, each christmas and birthday I could not await to see what books I would get. As a
+                    dyslexic, I never really wanted to read, but books like this, gave a balance between illustration
+                    and text that encouraged and developed my reading. It is amazing that well illustrated book can
+                    encourage those with reading difficulties to go on and be successful adults.
+                    </br></br>
+
+                    Hat's off to you Anna for authoring sensible, engaging books. There are way to many silly tomes and
+                    TV programs, that for me would have turned me off reading even further.
+                    - S. Keay
+                    </br></br>
+
+                    <b>- S. Keay</b>
+                </p>
+                </br></br></br></br>
+
+                <a target="_blank" class="review"
+                    href="https://www.amazon.co.uk/gp/customer-reviews/R1A9XKQKXKUW2S/ref=cm_cr_arp_d_rvw_ttl?ie=UTF8&ASIN=0993078303"><b>5.0
+                        out of 5 stars,
+                        Ideal present for my nephew!</b></a>
+
+                <p>
+                    My dad bought me Bamse Came Too book for my birthday.
+                    It is really interesting because it tells the journey about the Bamse the dog, how he helped and
+                    saved.
+                    </br></br>
+
+                    <b>- Shane Fernandes</b>
+                    </br></br></br></br>
+                </p>
+
+                <div class="container">
+                    <div class="right-side">
+                        <a target="_blank" class="review"
+                            href="https://www.amazon.co.uk/gp/customer-reviews/R1G71YRO2Y5E27/ref=cm_cr_arp_d_rvw_ttl?ie=UTF8&ASIN=0993078303"><b>
+                                5.0 out of 5 stars,An appealing story.
+                            </b></a>
+                        <p>
+                            An appealing WWII animal hero story made enjoyable for young children. Brought to life with
+                            beautiful illustrations.
+                            </br></br>
+                            <b>- Pleased anonymouse reader</b>
+                        </p>
+                    </div>
+                    <div class="left-side">
+                        <img class="castoffpic" src="cast-off.jpg" alt="Cast off picture" width="95%"
+                            style="border: 2px solid #073264" ;>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columnCloud">
+                &nbsp;
+            </div>
+
+            <footer>
+                <img src="SavesTheDay.png" alt="Bamse banner" width="100%">
+            </footer>
+            <p
+                style="font-size:18px; background-color: #f1f1f1; margin-top:-4px; margin-bottom:0px; border-top:2px solid #073264; padding-left:10px;">
+                <b>
+                    © Anna Mandell & Bamse Features Ltd 2014 |
+                    <a class="terms" href="BamseTerms.html"> Terms of Use </a></b>
+            </p>
+</body>
+
+</html>

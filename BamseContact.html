@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width initial-scale=1">
+<meta name="description" content="Bamse's contact page">
+
+<head>
+    <link rel="stylesheet" href="Bamse.css" />
+    <script src="https://kit.fontawesome.com/2d208c5fe1.js" crossorigin="anonymous"></script>
+    <title> Bamse Contact </title>
+
+    <style>
+        /* Nav active starts */
+        .active {
+            background-color: rgb(199, 194, 194);
+            border-left: 2px solid #073264;
+        }
+
+        .activemobile {
+            background-color: rgb(199, 194, 194);
+            border-top: 2px solid #073264;
+            border-bottom: 2px solid #073264;
+        }
+
+        /* Nav active ends */
+
+        .content {
+            background-color: #f1f1f1;
+            border-radius: 20px;
+            border: 2px solid #073264;
+            float: left;
+            width: 90%;
+            padding-left: 80px;
+            padding-right: 80px;
+            padding-bottom: 80px;
+            padding-top: 60px;
+            text-align: left;
+        }
+
+        .Title {
+            margin-top: -60px;
+        }
+
+        input[type=text] {
+            width: 200px;
+            padding: 12px 20px;
+            display: inline-block;
+            border: 2px solid #073264;
+            border-radius: 20px;
+            box-sizing: border-box;
+        }
+
+        input[type=email] {
+            width: 20%;
+            padding: 12px 20px;
+            display: inline-block;
+            border: 2px solid #073264;
+            border-radius: 20px;
+            box-sizing: border-box;
+            min-width: 300px;
+        }
+
+        textarea {
+            width: 70%;
+            background-color: white;
+            height: 200px;
+            padding: 12px 20px;
+            box-sizing: border-box;
+            border: 2px solid #073264;
+            border-radius: 20px;
+            resize: none;
+            min-width: 300px;
+        }
+
+        input[type=submit] {
+            width: 20%;
+            background-color: lightgrey;
+            color: black;
+            font-size: 20px;
+            padding: 14px 20px;
+            border: 2px solid #A70000;
+            border-radius: 20px;
+            cursor: pointer;
+            min-width: 200px;
+        }
+
+
+        .containerContact {
+            display: grid;
+            grid-template-columns: 1.7fr 0.3fr 1fr;
+            grid-template-rows: 1fr;
+            gap: 0px 50px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "Title Paw Text";
+        }
+
+        .Title {
+            grid-area: Title;
+        }
+
+        .Paw {
+            grid-area: Paw;
+        }
+
+        .Text {
+            grid-area: Text;
+        }
+
+
+
+        @media screen and (max-width: 1305px) {
+
+            .logo {
+                width: 180px;
+            }
+
+            .mainNavigation {
+                display: none;
+            }
+
+            .openbtn {
+                display: block;
+            }
+
+            .mySidepanel.sidepanel {
+                display: none;
+            }
+
+            .containerContact {
+                display: block;
+            }
+
+            .Paw {
+                padding-top: 40px;
+                padding-bottom: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="containerMedia">
+        <div class="Button-1">
+            <button aria-label="Facebook button" style="background-color:#8ED0F0; border:0px;">
+                <a class="mediaButtonL" target="_blank" href="https://www.facebook.com/BamseCameToo"> <i
+                        class="fa-brands fa-facebook-square fa-4x">
+                    </i></a></button>
+        </div>
+        <div class="Button-2">
+            <button aria-label="Twitter button" style="background-color:#8ED0F0; border:0px;">
+                <a class="mediaButtonL" target="_blank" href="https://twitter.com/seascampbamse"><i
+                        class="fa-brands fa-twitter-square fa-4x"></i></a></button>
+        </div>
+    </div>
+
+    <div id="mySidepanel" class="sidepanel">
+        <a href="index.html"><b>The Book</b></a>
+        <a href="#"><b>Bamse's Story</b></a>
+        <a href="BamseWood.html"><b>Bamse's Wood</b></a>
+        <a href="BamseReviews.html"><b>Reviews</b></a>
+        <a href="BamseActivities.html"><b>Activities</b></a>
+        <a href="BamseNews.html"><b>News</b></a>
+        <a class="activemobile" href="BamseContact.html"><b>Contact</b></a>
+    </div>
+
+    <button aria-label="Menu toggle button" class="openbtn" onclick="toggleText()"><b>☰</b></button>
+
+    <script>
+        document.getElementById('mySidepanel').addEventListener('click', openbtn);
+
+        function toggleText() {
+            var x = document.getElementById("mySidepanel");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+
+    <div class="mainNavigation">
+        <ul>
+            <li><a href="index.html"><b>The Book</b></a></li>
+            <li><a href="BamseStory.html"><b>Bamse's Story</b></a></li>
+            <li><a href="BamseWood.html"><b>Bamse's Wood</b></a></li>
+            <li><a href="BamseReviews.html"><b>Reviews</b></a></li>
+            <li><a href="BamseActivities.html"><b>Activities</b></a></li>
+            <li><a href="BamseNews.html"><b>News</b></a></li>
+            <li><a class="active" href="BamseContact.html"><b>Contact</b></a></li>
+        </ul>
+    </div>
+
+    <img src="LogoResized.png" width="200px" class="logo" alt="Bamse Logo">
+
+    <div class="header">
+        <img src="RealCloud1.png" width="10%" class="clouds" alt="Cloud picture" style="top: 10%; right: 65%">
+        <img src="RealCloud2.png" width="20%" class="clouds" alt="Cloud picture" style="top: 35%; left: 75%">
+        <img src="RealCloud3.png" width="12%" class="clouds" alt="Cloud picture" style="top: 15%; left: 60%">
+        <img src="RealCloud4.png" width="25%" class="clouds" alt="Cloud picture" style="top: 35%; left: 5%">
+        <h1 id="bamse-text" style="text-align:center; margin-top:325px;"><b>Bamse</b></h1>
+
+    </div>
+
+    </div>
+
+    <div class="columnCloud">
+        &nbsp;
+    </div>
+
+    <div class="row">
+        <div class="content">
+            <div class="containerContact">
+                <div class="Title">
+                    <h2 id="bamse-text">Contact </h2>
+                    <p style="font-size:20px;"><b>You can find us by clicking these links:
+                            <a class="review" href="https://twitter.com/seascampbamse">Twitter</a> / <a class="review"
+                                href="https://www.facebook.com/BamseCameToo">Facebook.</a></b></p>
+                </div>
+                <div class="Paw">
+                    <img src="small-pawprint.png" width="130px;">
+                </div>
+                <div class="Text">
+                    <p>
+                        <b style="font-size:20px;">You can also get in contact with Bamse by writing to:</b>
+                        </br></br>
+                        Bamse Features Limited
+                        </br>
+                        Engine Bank Chapel
+                        </br>
+                        Spalding
+                        </br>
+                        Lincolnshire PE12 0XX
+                        </br></br>
+                        Company Reg No 05798869
+                    </p>
+                </div>
+            </div>
+            </br>
+            <p style="font-size:20px;"><b>Below is a Bamse-tastic contact form that may also be of use:</b></p>
+            </br>
+            <form action="https://criticaltwits.com/action_tester.php" method="post" id="contact">
+                <p>Name:</p>
+                <input type="text" id="Name" name="name" size="30" maxlength="30"></br></br>
+                <p>Email:</p>
+                <input type="email" id="email" name="email" size="50" /><br /><br />
+                <p>Message:</p>
+                <textarea rows="4" cols="50" name="comments" form="contact"></textarea> </br></br>
+
+
+                <p style="font-size:20px;"><b>We also run a subscriber list through which we can send you an occasional
+                        newsletter giving you
+                        notice of
+                        new
+                        developments, news or offers from Bamse. </b></p>
+                <p style="font-size:20px;"><b>You may unsubscribe at any time.</b>
+                </p>
+
+                <p style="font-size:20px;"><b>Would you like to sign up?</b></p>
+                <label for="radio1" style="font-size:18px;">Yes</label>
+                <input type="radio" id="radio1" name="Sub to news" value="yes" />
+                <label for="radio2" style="font-size:18px;">Not this time</label>
+                <input type="radio" id="radio2" name="Sub to news" value="no" /></br></br></br>
+                <input type="submit" value="Submit" aria-label="Menu toggle button" />
+            </form>
+
+        </div>
+    </div>
+
+    <div class="columnCloud">
+        &nbsp;
+    </div>
+
+    <footer>
+        <img src="SavesTheDay.png" alt="Bamse banner" width="100%">
+    </footer>
+    <p
+        style="font-size:18px; background-color: #f1f1f1; margin-top:-4px; margin-bottom:0px; border-top:2px solid #073264; padding-left:10px;">
+        <b>
+            © Anna Mandell & Bamse Features Ltd 2014 |
+            <a class="terms" href="BamseTerms.html"> Terms of Use </a></b>
+    </p>
+</body>
+
+</html>

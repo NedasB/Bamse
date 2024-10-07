@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width initial-scale=1">
+<meta name="description" content="Bamse's Story page">
+
+<head>
+    <link rel="stylesheet" href="Bamse.css" />
+    <title> Bamse Story </title>
+    <script src="https://kit.fontawesome.com/2d208c5fe1.js" crossorigin="anonymous"></script>
+    <style>
+        /* Active bar styling start */
+        .active {
+            background-color: rgb(199, 194, 194);
+            border-right: 2px solid #073264;
+            border-left: 2px solid #073264;
+        }
+
+        .activemobile {
+            background-color: rgb(199, 194, 194);
+            border-top: 2px solid #073264;
+            border-bottom: 2px solid #073264;
+        }
+
+        /* Active bar styling end */
+
+        .content {
+            background-color: #f1f1f1;
+            border-radius: 20px;
+            border: 2px solid #073264;
+            float: left;
+            width: 90%;
+            padding-left: 80px;
+            padding-right: 80px;
+            padding-bottom: 80px;
+        }
+
+        .Pic {
+            text-align: center;
+        }
+
+
+        @media screen and (max-width: 1305px) {
+            .logo {
+                width: 180px;
+            }
+
+            .mainNavigation {
+                display: none;
+            }
+
+            .openbtn {
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 900px) {
+            .video {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="containerMedia">
+        <div class="Button-1">
+            <button aria-label="Facebook button" style="background-color:#8ED0F0; border:0px;">
+                <a class="mediaButtonL" target="_blank" href="https://www.facebook.com/BamseCameToo"> <i
+                        class="fa-brands fa-facebook-square fa-4x">
+                    </i></a></button>
+        </div>
+        <div class="Button-2">
+            <button aria-label="Twitter button" style="background-color:#8ED0F0; border:0px;">
+                <a class="mediaButtonL" target="_blank" href="https://twitter.com/seascampbamse"><i
+                        class="fa-brands fa-twitter-square fa-4x"></i></a></button>
+        </div>
+    </div>
+
+    <div id="mySidepanel" class="sidepanel">
+        <a href="index.html"><b>The Book</b></a>
+        <a class="activemobile" href="BamseStory.html"><b>Bamse's Story</b></a>
+        <a href="BamseWood.html"><b>Bamse's Wood</b></a>
+        <a href="BamseReviews.html"><b>Reviews</b></a>
+        <a href="BamseActivities.html"><b>Activities</b></a>
+        <a href="BamseNews.html"><b>News</b></a>
+        <a href="BamseContact.html"><b>Contact</b></a>
+    </div>
+
+
+    <button aria-label="Menu toggle button" class="openbtn" onclick="toggleText()"><b>☰</b></button>
+
+
+    <script>
+        function toggleText() {
+            var x = document.getElementById("mySidepanel");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+
+    <div class="mainNavigation">
+        <ul>
+            <li><a href="index.html"><b>The Book</b></a></li>
+            <li><a class="active" href="BamseStory.html"><b>Bamse's Story</b></a></li>
+            <li><a href="BamseWood.html"><b>Bamse's Wood</b></a></li>
+            <li><a href="BamseReviews.html"><b>Reviews</b></a></li>
+            <li><a href="BamseActivities.html"><b>Activities</b></a></li>
+            <li><a href="BamseNews.html"><b>News</b></a></li>
+            <li><a href="BamseContact.html"><b>Contact</b></a></li>
+        </ul>
+    </div>
+
+    <img src="LogoResized.png" alt="Bamse logo" width="200px" class="logo">
+
+    <div class="header">
+        <img src="RealCloud1.png" width="10%" class="clouds" alt="Cloud picture" style="top: 10%; right: 65%">
+        <img src="RealCloud2.png" width="20%" class="clouds" alt="Cloud picture" style="top: 35%; left: 75%">
+        <img src="RealCloud3.png" width="12%" class="clouds" alt="Cloud picture" style="top: 15%; left: 60%">
+        <img src="RealCloud4.png" width="25%" class="clouds" alt="Cloud picture" style="top: 35%; left: 5%">
+        <h1 id="bamse-text" style="text-align:center; margin-top:325px;"><b>Bamse</b></h1>
+
+
+    </div>
+
+   
+
+    <div class="columnCloud">
+        &nbsp;
+    </div>
+
+    <div class="row">
+        <div class="content">
+            <h2 id="bamse-text">The Story</h2>
+            <p>The Sea Scamp Bamse adventure stories are inspired by the exploits of Bamse, the Norwegian St Bernard
+                dog, who sailed from Norway to Great Britain during World War 2.</br></br>
+                Anna first learned of Bamse, on a visit to Scotland in 2012. The story of Bamse was an amazing one and
+                totally captured her imagination.
+            </p>
+            </br></br>
+            <div class="Pic">
+                <img style="border:2px solid #073264; min-width:200px; width:40%;" src="g1.jpg" alt="Bamse picture">
+            </div>
+            </br></br>
+            <p>
+                Bamse was born in 1937 and lived with the Hafto family in Honningsvåg, Norway. In 1940, during the
+                invasion of Norway, he became a crew member of the KNM Thorodd, a ship that was part of the flotilla
+                alongside HMS Devonshire which carried
+                King Haakon to Great Britain.
+            </p>
+            </br></br>
+            <div class="Pic">
+                <img style="border:2px solid #073264; min-width:200px; width:40%;" src="g2.jpg" alt="Bamse picture">
+            </div>
+            </br></br>
+            <p>
+                Bamse and his fellow crew members initially arrived at Lerwick but were then transferred to Port Edgar
+                in the Firth of Forth where KNM Thorodd was converted for minesweeping duties. With the conversion
+                complete KNM Thorodd regularly put out to sea to carry out its dangerous tasks.</br></br>
+                Dundee and Montrose became the regular home ports of KNM Thorodd and its crew. In both towns Bamse
+                became known for his brave deeds and brought companionship to all with whom he came into
+                contact.
+            </p>
+            <p>
+                Ultimately Bamse was adopted as the mascot for all of the Norwegian forces. Seventy years on the
+                Norwegian Navy still sends, on a yearly principle, dignitaries to his grave on the anniversary of his
+                death.
+                This amazing story prompted Anna to introduce children to Bamse by way of a their own picture book.
+            </p>
+            <p>You can read more about Bamse <a target="_blank" class="review"
+                    href="https://en.wikipedia.org/wiki/Bamse_(dog)"> here.</a></p>
+            </br></br>
+            <div class="Pic">
+                <img style="border:2px solid #073264; min-width:200px; width:40%;" src="g3.jpg" alt="Bamse picture">
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="columnCloud">
+        &nbsp;
+    </div>
+
+    <footer>
+        <img src="SavesTheDay.png" alt="Bamse banner" width="100%">
+    </footer>
+    <p
+        style="font-size:18px; background-color: #f1f1f1; margin-top:-4px; margin-bottom:0px; border-top:2px solid #073264; padding-left:10px;">
+        <b>
+            © Anna Mandell & Bamse Features Ltd 2014 |
+            <a class="terms" href="BamseTerms.html"> Terms of Use </a></b>
+    </p>
+</body>
+
+</html>

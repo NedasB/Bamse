@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width initial-scale=1">
+<meta name="description" content="Bamse's wood page">
+
+<head>
+    <link rel="stylesheet" href="Bamse.css" />
+    <title> Bamse's Wood </title>
+    <script src="https://kit.fontawesome.com/2d208c5fe1.js" crossorigin="anonymous"></script>
+    <style>
+        h2 {
+            font-size: 60px;
+            margin: 0px 0px 0px 0px;
+            padding: 0px 0px 0px 0px;
+        }
+
+        h3 {
+            font-size: 25px;
+        }
+
+        /* Nav active starts */
+
+        .active {
+            background-color: rgb(199, 194, 194);
+            border-right: 2px solid #073264;
+            border-left: 2px solid #073264;
+        }
+
+        .activemobile {
+            background-color: rgb(199, 194, 194);
+            border-top: 2px solid #073264;
+            border-bottom: 2px solid #073264;
+        }
+
+        /* Nav active ends */
+
+        .content {
+            background-color: #f1f1f1;
+            border-radius: 20px;
+            border: 2px solid #073264;
+            float: left;
+            width: 90%;
+            padding-left: 40px;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            padding-right: 40px;
+        }
+
+        /* Container 1 starts */
+
+        .container {
+            display: grid;
+            grid-template-columns: 0.6fr 1.4fr;
+            grid-template-rows: 1fr;
+            gap: 0px 20px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "Picture Text";
+        }
+
+        .Picture {
+            grid-area: Picture;
+        }
+
+        .Text {
+            grid-area: Text;
+        }
+
+        .container1 {
+            display: grid;
+            grid-template-columns: 0.6fr 1.4fr;
+            grid-template-rows: 1fr;
+            gap: 0px 20px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "Picture1 Text1";
+        }
+
+        .Picture1 {
+            grid-area: Picture1;
+        }
+
+        .Text1 {
+            grid-area: Text1;
+        }
+
+        /* Container 1 ends */
+
+        /* Container 2 starts */
+
+        .container2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "Picture2 Picture2 Picture2";
+        }
+
+        .Picture2 {
+            grid-area: Picture2;
+
+        }
+
+        .Picture2 {
+            grid-area: Picture2;
+
+        }
+
+        .Picture2 {
+            grid-area: Picture2;
+        }
+
+        /* Container 2 ends */
+
+        /* Container 3 starts */
+
+        .container3 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "Map One"
+                "Two Three";
+        }
+
+        .Map {
+            grid-area: Map;
+        }
+
+        .One {
+            grid-area: One;
+        }
+
+        .Two {
+            grid-area: Two;
+        }
+
+        .Three {
+            grid-area: Three;
+        }
+
+        .container3 {
+            display: none;
+        }
+
+        /* Container 3 ends */
+
+        @media screen and (max-width: 1825px) {
+            .container {
+                display: block;
+            }
+
+            .container1 {
+                display: block;
+            }
+
+            .Picture1 {
+                display: none;
+            }
+
+            .container2 {
+                display: none;
+            }
+
+            .container3 {
+                display: grid;
+                text-align: center;
+            }
+
+            .content {
+                padding-top: 50px;
+                padding-left: 80px;
+                padding-right: 80px;
+                padding-bottom: 80px;
+            }
+        }
+
+        @media screen and (max-width: 1305px) {
+
+            .logo {
+                width: 180px;
+            }
+
+            .mainNavigation {
+                display: none;
+            }
+
+            .openbtn {
+                display: block;
+            }
+
+            .container3 {
+                display: block;
+            }
+
+            .Picture {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="containerMedia">
+        <div class="Button-1">
+            <button aria-label="Facebook button" style="background-color:#8ED0F0; border:0px;">
+                <a class="mediaButtonL" target="_blank" href="https://www.facebook.com/BamseCameToo"> <i
+                        class="fa-brands fa-facebook-square fa-4x">
+                    </i></a></button>
+        </div>
+        <div class="Button-2">
+            <button aria-label="Twitter button" style="background-color:#8ED0F0; border:0px;">
+                <a class="mediaButtonL" target="_blank" href="https://twitter.com/seascampbamse"><i
+                        class="fa-brands fa-twitter-square fa-4x"></i></a></button>
+        </div>
+    </div>
+
+    <div id="mySidepanel" class="sidepanel">
+        <a href="index.html"><b>The Book</b></a>
+        <a href="BamseStory.html"><b>Bamse's Story</b></a>
+        <a class="activemobile" href="BamseWood.html"><b>Bamse's Wood</b></a>
+        <a href="BamseReviews.html"><b>Reviews</b></a>
+        <a href="BamseActivities.html"><b>Activities</b></a>
+        <a href="BamseNews.html"><b>News</b></a>
+        <a href="BamseContact.html"><b>Contact</b></a>
+    </div>
+
+
+    <button aria-label="Menu toggle button" class="openbtn" onclick="toggleText()"><b>☰</b></button>
+
+
+    <script>
+        function toggleText() {
+            var x = document.getElementById("mySidepanel");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+
+
+    <div class="mainNavigation">
+        <ul>
+            <li><a href="index.html"><b>The Book</b></a></li>
+            <li><a href="BamseStory.html"><b>Bamse's Story</b></a></li>
+            <li><a class="active" href="BamseWood.html"><b>Bamse's Wood</b></a></li>
+            <li><a href="BamseReviews.html"><b>Reviews</b></a></li>
+            <li><a href="BamseActivities.html"><b>Activities</b></a></li>
+            <li><a href="BamseNews.html"><b>News</b></a></li>
+            <li><a href="BamseContact.html"><b>Contact</b></a></li>
+        </ul>
+    </div>
+
+    <img src="LogoResized.png" alt="Bamse logo" width="200px" class="logo">
+
+    <div class="header">
+        <img src="RealCloud1.png" width="10%" class="clouds" alt="Cloud picture" style="top: 10%; right: 65%">
+        <img src="RealCloud2.png" width="20%" class="clouds" alt="Cloud picture" style="top: 35%; left: 75%">
+        <img src="RealCloud3.png" width="12%" class="clouds" alt="Cloud picture" style="top: 15%; left: 60%">
+        <img src="RealCloud4.png" width="25%" class="clouds" alt="Cloud picture" style="top: 35%; left: 5%">
+        <h1 id="bamse-text" style="text-align:center; margin-top:325px;"><b>Bamse</b></h1>
+
+    </div>
+
+    <div class="columnCloud">
+        &nbsp;
+    </div>
+
+    <div class="row">
+        <div class="content">
+            <div class="container">
+                <div class="Text">
+                    <h2 id="bamse-text">Bamse's Wood</h2>
+                    </br>
+                    <h3>- Offset For The Picture Book</h3>
+                    <p>
+                        “Bamse Came Too” may be unique in that it is, we believe,
+                        the first book to have an area of woodland planted in order to offset the book’s carbon
+                        footprint.
+                        Bamse’s Wood is 17 acres in the Lake District and will incorporate a small memorial garden
+                        which
+                        will include some Norway Maple,
+                        Norway Spruce & Scots Pine. Elsewhere, the accent will be on native broadleaf. Red squirrels
+                        have been spotted in Blengdale at the northern end.
+                        The remaining field at the northern end by the bridge is just short of 7 acres and again the
+                        preponderant species will be native broadleaf.
+                    </p>
+                </div>
+                <div class="Picture">
+                    <img class="woodtruck" src="bamses-wood-truck-fixed.jpg" alt="Picture of Bamse's wood"
+                        style="border: 2px solid#073264; height:340px; width:480px;">
+                </div>
+            </div>
+
+            <div class="container1">
+                <div class="Text1">
+                    <h3>Locations of, and directions to, Bamse's Wood</h3>
+                    <p>
+                        Bamse’s Wood is located 3 miles to the north-east of Gosforth.
+                        Turn off the A595 Whitehaven to Barrow-in-Furness road into the village of Gosforth.
+                        Continue through the village and bear left following signs for Nether Wasdale/Wasdale.
+                        On crossing the river, the road climbs the hill and the access track known as ‘Guards
+                        Lonning’
+                        is to the left.
+                        Continue up Guards Lonning (N.B. Guards Lonning provides access on foot and by tractor, 4×4,
+                        quad-bike, etc.) for approx.
+                        1 ½ miles and Lot 1 is on your right. Lot 2 is approximately ½ a mile further along Guards
+                        Lonning on your left.
+                        The location is shown on the map below. SatNav users input postcode CA20 1EN to get to
+                        Guards
+                        Lonning
+                    </p>
+                </div>
+                <div class="Picture1">
+                    <iframe title="map iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8707.988705300617!2d-3.410034293294527!3d54.
+                            43678508589394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487ccae288181273%3A0xac18287f40ce54f
+                            c!2sGosforth%2C%20Seascale%20CA20%201EN!5e1!3m2!1sen!2suk!4v1624462640861!5m2!1sen!2suk"
+                        style="border:2px solid #073264; height:340px; width:480px;">
+                    </iframe>
+                </div>
+            </div>
+
+            <div class="container2">
+                <div class="Pict-1">
+                    <img class="bottom3" src="bamses-wood-map-fixed.jpg" alt="Picture of Bamse's map"
+                        style="border: 2px solid#073264; height:340px; width:480px;">
+                </div>
+                <div class="Pict-2">
+                    <img class="bottom3" src="bamses-wood-trees-resized.jpg" alt="Picture of Bamse's wood"
+                        style=" border: 2px solid#073264; height:340px; width:480px;">
+                </div>
+                <div class="Pict-3">
+                    <img class="bottom3" src="Bamse-wood-puddle.jpg" alt="Picture of Bamse's wood"
+                        style=" border: 2px solid#073264; height:340px; width:480px;">
+                </div>
+            </div>
+
+            <div class="container3">
+                <div class="Map">
+                    <iframe title="map iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8707.988705300617!2d-3.410034293294527!3d54.
+                            43678508589394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487ccae288181273%3A0xac18287f40ce54f
+                            c!2sGosforth%2C%20Seascale%20CA20%201EN!5e1!3m2!1sen!2suk!4v1624462640861!5m2!1sen!2suk"
+                        style="border:2px solid #073264; height:340px; width:480px;">
+                    </iframe>
+                </div>
+                <div class="One">
+                    <img class="bottom3" src="bamses-wood-map-fixed.jpg" alt="Picture of Bamse's wood"
+                        style="border: 2px solid#073264; height:340px; width:480px;">
+                </div>
+                <div class="Two">
+                    <img class="bottom3" src="bamses-wood-trees-resized.jpg" alt="Picture of Bamse's wood"
+                        style=" border: 2px solid#073264; height:340px; width:480px;">
+                </div>
+                <div class="Three">
+                    <img class="bottom3" src="Bamse-wood-puddle.jpg" alt="Picture of Bamse's wood"
+                        style=" border: 2px solid#073264; height:340px; width:480px;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="columnCloud">
+        &nbsp;
+    </div>
+
+    <footer>
+        <img src="SavesTheDay.png" alt="Bamse banner" width="100%">
+    </footer>
+    <p
+        style="font-size:18px; background-color: #f1f1f1; margin-top:-4px; margin-bottom:0px; border-top:2px solid #073264; padding-left:10px;">
+        <b>
+            © Anna Mandell & Bamse Features Ltd 2014 |
+            <a class="terms" href="BamseTerms.html"> Terms of Use </a></b>
+    </p>
+</body>
+
+</html>

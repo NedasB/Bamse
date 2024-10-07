@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+          .sidepanel {
+            width: 200px;
+            position: absolute;
+            z-index: 1;
+            height: 400px;
+            top: 190px;
+            right: 200px;
+            background-color: #f1f1f1;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+            border-radius: 0px 0px 0px 40px;
+            border-left: 2px solid #073264;
+            border-bottom: 2px solid #073264;
+            color: #A70000;
+        }
+
+        .sidepanel a {
+            padding: 30px 8px 8px 16px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #A70000;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidepanel a:hover {
+            color: #073264;
+        }
+
+        .openbtn {
+            font-size: 140px;
+            cursor: pointer;
+            background-color: #f1f1f1;
+            color: #A70000;
+            padding-left: 60px;
+            padding-right: 60px;
+            padding-bottom: 30px;
+            border-left: 2px solid #073264;
+            border-bottom: 2px solid #073264;
+            border-radius: 0px 0px 0px 40px;
+            position: absolute;
+            top: 200;
+            right: 200;
+            z-index: 2;
+        }
+
+        .openbtn:hover {
+            background-color: rgb(224, 223, 223);
+        }
+        
+    </style>
+</head>
+    
+
+<div id="mySidepanel" class="sidepanel">
+    <a href="#">New Book</a>
+    <a href="#">Bamse's Wood</a>
+    <a href="#">Activities</a>
+    <a href="#">Social Media</a>
+    <a href="#">News</a>
+</div>
+
+
+<button class="openbtn" onclick="toggleText()"><b>☰</b></button>
+
+
+<script>
+function toggleText(){
+  var x = document.getElementById("mySidepanel");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+    
+
+</body>
+
+</html>

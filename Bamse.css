@@ -1,0 +1,259 @@
+/* Bits of core styling start */
+
+* {
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Freestyle Script Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Freestyle Script Regular'), url('./fonts/FreeStyleScript.ttf') format('ttf');
+    font-display: swap;
+}
+
+#bamse-text {
+    font-family: 'Freestyle Script Regular', Times, serif;
+}
+
+body {
+    margin: 0;
+    background-color: #8ED0F0;
+}
+
+/* Bits of core styling end */
+
+/* Text forms start */
+h1 {
+    font-size: 160px;
+    color: #A70000;
+    text-shadow: #073264 -5px 5px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 60px;
+}
+
+p {
+    font-size: 18px;
+}
+
+/* Text forms end */
+
+/* Bits of other styling start */
+
+.clouds {
+    position: absolute;
+    z-index: 1;
+}
+.logo {
+    border-right: 2px solid #073264;
+    border-bottom: 2px solid #073264;
+    border-radius: 0px 0px 60px 0px;
+    background-color: #f1f1f1;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+
+/* Bits of other styling end */
+
+/* The sidepanel menu start */
+
+.sidepanel {
+    width: 200px;
+    position: absolute;
+    z-index: 2;
+    height: 615px;
+    top: 100px;
+    right: 0;
+    background-color: #f1f1f1;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 50px;
+    padding-bottom: 0px;
+    border-radius: 0px 0px 0px 20px;
+    border-left: 2px solid #073264;
+    border-bottom: 2px solid #073264;
+    color: #A70000;
+    display: none;
+}
+
+.sidepanel a {
+    padding: 25px 10px 25px 20px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #A70000;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidepanel a:hover {
+    background-color: rgb(224, 223, 223);
+}
+
+.openbtn {
+    width: 200px;
+    height: 140px;
+    font-size: 100px;
+    cursor: pointer;
+    padding-bottom: 20px;
+    background-color: #f1f1f1;
+    color: #A70000;
+    border-left: 2px solid #073264;
+    border-bottom: 2px solid #073264;
+    border-radius: 0px 0px 0px 40px;
+    position: absolute;
+    display: none;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.openbtn:hover {
+    background-color: rgb(224, 223, 223);
+}
+
+/* The sidepanel menu end */
+
+/* Nav bar start */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    border-bottom: 2px solid #073264;
+    border-left: 2px solid #073264;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    border-radius: 0px 0px 0px 40px;
+
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #A70000;
+    text-align: center;
+    padding-top: 35px;
+    width: 155px;
+    height: 90px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: rgb(224, 223, 223);
+}
+
+/* Nav bar end */
+
+
+/* Terms link style start */
+a.terms {
+    font-size: 18px;
+}
+
+a.terms:link {
+    color: #A70000;
+    text-decoration: none;
+}
+
+a.terms:visited {
+    color: #A70000;
+    text-decoration: none;
+}
+
+a.terms:hover {
+    color: #073264;
+    text-decoration: underline;
+}
+
+a.terms:active {
+    color: lightskyblue;
+    text-decoration: underline;
+}
+
+/* Terms link style end */
+
+/* Review link style start */
+
+a.review {
+    font-size: 20px;
+}
+
+a.review:link {
+    color: #073264;
+    text-decoration: none;
+}
+
+a.review:visited {
+    color: #073264;
+    text-decoration: none;
+}
+
+a.review:hover {
+    color: #A70000;
+    text-decoration: underline;
+}
+
+a.review:active {
+    color: lightskyblue;
+    text-decoration: underline;
+}
+
+/* Review link style end */
+
+/* Main layout start */
+.columnCloud {
+    float: left;
+    width: 5%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Main layout end */
+
+/* Media related stuff start */
+
+.mediaButtonL {
+    color: #073264;
+}
+
+.mediaButtonL:hover {
+    color: #A70000;
+}
+
+.containerMedia {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    position: absolute;
+    top: 470px;
+    right: 5%;
+    grid-template-areas:
+        "Button-1 Button-2";
+}
+
+.Button-1 {
+    grid-area: Button-1;
+}
+
+.Button-2 {
+    grid-area: Button-2;
+}
+
+/* Media related stuff end */
